@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
 
 app.use('/api',productRoutes)
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(5000, '0.0.0.0', () => {
+  console.log('Backend server is running on port 5000');
 });
+
